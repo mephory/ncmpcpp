@@ -478,6 +478,10 @@
 ##
 #use_console_editor = yes
 #
+## Note: You can choose whether or not to keep the current search constraint
+## when starting a new search.
+#search_engine_keep_constraint = "yes"
+#
 ##### colors definitions #####
 ##
 ## It is possible to set a background color by setting a color value
