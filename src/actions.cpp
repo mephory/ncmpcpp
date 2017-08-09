@@ -3029,7 +3029,8 @@ void findItem(const SearchDirection direction)
 			*wFooter,
 			Statusbar::Helpers::FindImmediately(w, direction));
 		Statusbar::put() << (boost::format("Find %1%: ") % direction).str();
-		constraint = wFooter->prompt(constraint);
+		constraint = wFooter->prompt(
+			(Config.search_engine_keep_constraint) ? constraint : "");
 	}
 	catch (NC::PromptAborted &)
 	{

@@ -587,6 +587,8 @@ bool Configuration::read(const std::vector<std::string> &config_paths, bool igno
 	p.add("window_border_color", &window_border, "green", verbose_lexical_cast<NC::Color>);
 	p.add("active_window_border", &active_window_border, "red",
 	      verbose_lexical_cast<NC::Color>);
+	p.add("search_engine_keep_constraint", &search_engine_keep_constraint,
+	      "yes", yes_no);
 
 	return std::all_of(
 		config_paths.begin(),

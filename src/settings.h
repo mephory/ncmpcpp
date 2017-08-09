@@ -175,6 +175,7 @@ struct Configuration
 	bool allow_for_physical_item_deletion;
 	bool media_library_albums_split_by_date;
 	bool startup_slave_screen_focus;
+	bool search_engine_keep_constraint;
 
 	unsigned mpd_connection_timeout;
 	unsigned crossfade_time;
